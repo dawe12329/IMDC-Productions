@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Minerva Modern';
+  src: url('./fonts/fonnts.com-MinervaModern_Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 220px;
+  background-color: #5d5245;
+  padding-right: 5rem;
+  padding-left: 10rem;
+}
+
+.header_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 6.5rem;
+}
+
+.header_center h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-family: 'Minerva Modern', serif;
+  font-weight: 100;
+}
+
+.routes {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 0.1rem;
+
+}
+
+.routes a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: 'Freight Text Pro', serif;
+  transition: color 0.2s;
+}
+
+.routes a:hover,
+.routes a:focus {
+  color: #b89d72;
+  /* highlight color */
+  text-decoration: underline;
+}
+
+.header_left {
+  display: flex;
+  align-items: right;
+  flex-shrink: 0;
+}
+
+.header_social {
+  display: flex;
+  align-items: right;
+  font-size: 1.9rem;
+}
+
+.header_social a {
+  color: #ffffff;
+  margin-right: .75rem;
+  margin-left: 0.6rem;
+  transition: color 0.3s;
+  margin-top: 0.9rem;
+}
+
+.header_social a:hover {
+  color: #e1306c;
+  transform: translateY(-3px);
+}
+
+.header_actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 2rem;
+}
+
+.icon_btn {
+  position: relative;
+  display: inline-flex;
+  align-items: left;
+  gap: .5rem;
+  padding: .6rem 1rem;
+  font-size: 1.2rem;
+  background: #f7f7f9;
+  border: 3px solid #ffffff;
+  border-radius: 9999px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 1rem;
+  background: transparent;
+  transition: background 0.45s ease, transform 0.45s ease;
+}
+
+.icon_btn:hover,
+.icon_btn:focus {
+  background: #ececf0;
+  transform: translateY(-1.5px);
+  outline: none;
+}
+
+.icon_btn span {
+  font-weight: 500;
+}
